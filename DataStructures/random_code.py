@@ -35,5 +35,12 @@ my_deck = FrenchDeck()
 print(choice(my_deck))  ## Picking a random card
 
 
+## Printing all cards in the deck
+index = 1
+for card in my_deck:
+    print(f"{index}: {card}")
+    index += 1
+
+
 
 
