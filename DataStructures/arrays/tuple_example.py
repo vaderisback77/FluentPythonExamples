@@ -29,3 +29,38 @@ vehicle type: Motorcyle, vehicle name: Suzuki GSXR600
 vehicle name: Land Rover Evoque, vehicle year: 2013
 %
 """
+
+### If you are keeping records, use tuple instead of the list - more memory efficient
+
+
+
+"""
+>>> import os
+>>> _, filename = os.path.split('/home/luciano/.ssh/id_rsa.pub')
+>>> filename
+'id_rsa.pub'
+
+"""
+
+"""
+Another example:
+>>> brand, model, *misc = "Suzuki", "gsxr600", 2014, 11999, "Petrol"
+>>> brand
+'Suzuki'
+>>> model
+'gsxr600'
+>>> misc
+[2014, 11999, 'Petrol']
+>>> 
+
+## misc value can exist anywhere in the tuple - misc becomes a list
+>>> brand, *misc, gas = "Yamaha", "R6", 2024, 12999, "Petrol"
+>>> 
+>>> brand
+'Yamaha'
+>>> gas
+'Petrol'
+>>> misc
+['R6', 2024, 12999]
+>>> 
+"""
